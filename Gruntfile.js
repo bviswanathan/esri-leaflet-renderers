@@ -144,7 +144,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-karma');
 
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['test', 'concat', 'uglify']);
+  grunt.registerTask('build', ['test', 'concat', 'uglify', 'watch']);
   grunt.registerTask('test', ['jshint', 'karma:run']);
   grunt.registerTask('prepublish', ['concat', 'uglify']);
 }
